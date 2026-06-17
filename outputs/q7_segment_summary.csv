@@ -1,0 +1,11 @@
+Segment,Customers,Avg_Recency_Days,Avg_Orders,Avg_Revenue_Per_Customer,Total_Segment_Revenue,Revenue_Share_Pct,Revenue_Rank
+Champions,1297,20.0,17.0,9204.22,11937870.79,68.4,1
+Loyal Customers,1123,73.3,5.9,2239.42,2514863.7,14.4,2
+At Risk,551,302.1,5.3,2164.6,1192697.03,6.8,3
+About to Sleep,466,511.8,3.2,1294.66,603311.6,3.5,4
+New Customers,451,28.1,1.5,929.12,419033.51,2.4,5
+Need Attention,618,315.9,1.3,440.08,271969.04,1.6,6
+Lost,593,498.7,1.2,362.13,214740.29,1.2,7
+Potential Loyalists,355,79.8,2.7,600.14,213051.33,1.2,8
+Promising,211,107.5,1.1,238.31,50282.56,0.3,9
+Hibernating,197,560.1,1.4,172.27,33936.45,0.2,10
