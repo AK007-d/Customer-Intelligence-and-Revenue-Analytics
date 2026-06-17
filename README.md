@@ -17,6 +17,14 @@ The challenge: build an end-to-end analytics pipeline that cleans raw transactio
 
 ---
 
+## Dataset
+
+**UCI Online Retail II** — Real commercial transaction data from a UK-based gift-ware retailer (Dec 2009 – Dec 2011).
+Download `online_retail_II.csv` and place in `data/` before running.
+> [Download from Kaggle](https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci) · Chen, D. (2012). UCI ML Repository. https://doi.org/10.24432/C5CG6D · CC BY 4.0
+
+---
+
 ## The Solution — 4-Module Analytics Pipeline
 
 | Input | Description |
@@ -61,6 +69,7 @@ RAW DATA (1,067,371 rows)
 ---
 
 ## Dashboard
+*Built with Power BI — using query result CSVs exported from the MySQL analytics pipeline.*
 
 ![Power BI Dashboard](outputs/power_bi_dashboard.png)
 
@@ -122,18 +131,13 @@ Top 20 SKUs drive ~28% of revenue. Classify as Tier 1 with dedicated inventory b
 
 ---
 
-## Dataset
-
-**UCI Online Retail II** — Real commercial transaction data from a UK-based gift-ware retailer (Dec 2009 – Dec 2011).
-Download `online_retail_II.csv` and place in `data/` before running.
-> [Download from Kaggle](https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci) · Chen, D. (2012). UCI ML Repository. https://doi.org/10.24432/C5CG6D · CC BY 4.0
-
----
-
 ## Project Structure
 
 ```
 Customer-Intelligence-Analytics/
+├── README.md
+├── insights_report.md
+│
 ├── data/
 │   ├── online_retail_II.csv               ← download from Kaggle (not in repo)
 │   ├── cleaned_transactions.csv
@@ -161,7 +165,6 @@ Customer-Intelligence-Analytics/
     ├── cohort_avg_retention_curve.png
     ├── rfm_segment_distribution.png
     ├── rfm_revenue_by_segment.png
-    ├── insights_report.md
     └── q1_monthly_revenue.csv ... q8_yoy_growth.csv
 ```
 
