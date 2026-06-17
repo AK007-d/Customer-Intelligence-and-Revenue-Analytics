@@ -134,7 +134,7 @@ Top 20 SKUs drive ~28% of revenue. Classify as Tier 1 with dedicated inventory b
 ## Project Structure
 
 ```
-Customer-Intelligence-Analytics/
+Customer-Intelligence-and-Revenue-Analytics/
 ├── README.md
 ├── insights_report.md
 │
