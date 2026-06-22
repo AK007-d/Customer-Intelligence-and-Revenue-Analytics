@@ -54,7 +54,7 @@ RAW DATA (1,067,371 rows)
 │
 └── Module 4: MySQL Analytics (7 queries)
       Q1 Monthly Revenue + MoM Growth    · LAG() OVER()
-      Q2 Country Performance (ex-UK)*    · RANK(), DENSE_RANK()
+      Q2 Country Performance (ex-UK)     · RANK(), DENSE_RANK()
       Q3 Top 20 Products by Revenue      · NTILE(4), RANK()
       Q4 Customer LTV Ranking            · PERCENT_RANK(), multi-table JOIN
       Q5 Peak Trading Hours              · RANK() OVER (PARTITION BY DayOfWeek)
@@ -62,13 +62,14 @@ RAW DATA (1,067,371 rows)
       Q8 YoY Growth: UK vs International · Conditional aggregation, float cast
       Output: q1–q8 result CSVs
 
-* UK excluded from Q2 — at £14M it dwarfs all international markets and makes
-  the chart unreadable. UK vs International comparison is handled in Q8.
+Note: UK excluded from Q2 — at £14M it dwarfs all international markets.
+UK vs International comparison is handled separately in Q8.
 ```
 
 ---
 
 ## Dashboard
+
 *Built with Power BI — using query result CSVs exported from the MySQL analytics pipeline.*
 
 ![Power BI Dashboard](outputs/power_bi_dashboard.png)
@@ -87,6 +88,27 @@ RAW DATA (1,067,371 rows)
 | Product Analysis | Top 20 SKUs by revenue | REGENCY CAKESTAND alone: £286K from 3,317 orders |
 
 Champions (1,297 customers) generated £11.9M. At Risk + About to Sleep segments hold £1.79M in recoverable revenue. Netherlands delivers £24,998 revenue per customer — consistent with a wholesale buyer profile.
+
+---
+
+## Business Questions & Answers
+
+Real business questions this analysis is designed to answer — with findings drawn directly from the data.
+
+**Q1. Which customer segment is most at risk of churning and what is the revenue impact?**
+At Risk customers (551 customers, avg 302 days inactive) represent £1.19M in historical revenue. About to Sleep (466 customers, avg 512 days inactive) adds a further £603K. Combined, £1.79M in revenue is at risk of permanent loss within the next 1–2 purchase cycles if no intervention is made.
+
+**Q2. Which international market should be prioritised for B2B sales investment?**
+Netherlands delivers £24,998 revenue per customer across just 22 accounts — the highest revenue-per-customer of any market outside EIRE. EIRE generates £120,412 per customer from only 5 accounts. Both profiles are consistent with wholesale buyers, making them the highest-priority targets for a structured B2B sales motion with volume pricing and annual contracts.
+
+**Q3. If only one win-back campaign could be run this month, which segment and what is the projected return?**
+At Risk segment. These 551 customers have purchased before (avg 5.3 orders each) and their inactivity is recent enough to be recoverable. At an average spend of £2,165 per customer, a 15% reactivation rate returns approximately £179K in revenue from a single campaign.
+
+**Q4. Which products are driving repeat purchases versus one-time buys?**
+REGENCY CAKESTAND 3 TIER leads with 3,317 orders across 1,314 unique customers — a repeat purchase rate of 2.5 orders per customer. WHITE HANGING HEART T-LIGHT HOLDER shows 4,888 orders from 1,490 customers. Both are high-frequency, broad-reach SKUs that anchor the repeat purchase funnel and should be prioritised for inventory protection and bundle strategies.
+
+**Q5. What is the revenue impact of improving M+1 retention by 5 percentage points?**
+Current M+1 retention is 21%. A 5-point improvement to 26% retains approximately 23 additional customers per cohort. At an average new customer spend of £929, that is approximately £21K per cohort. Across 12 monthly cohorts, the annualised impact is approximately £252K in additional retained revenue — before any upsell or repeat purchase effect.
 
 ---
 
@@ -115,7 +137,7 @@ Top 20 SKUs drive ~28% of revenue. Classify as Tier 1 with dedicated inventory b
 | Champions Retention | £11,937,871 base | Risk protection |
 | M+1 Re-Engagement | ~290 customers/cohort | +5pp M+1 retention |
 | At Risk Win-Back | £1,795,009 recoverable | ~£179K recovered |
-| International B2B | £1,320,495 intl base | +12–15% YoY growth |
+| International B2B | £1,320,495 intl base | +12-15% YoY growth |
 | Campaign Scheduling | All segments | Engagement uplift |
 | Tier 1 SKU Protection | 28% of £17.5M | Stockout prevention |
 
@@ -139,19 +161,19 @@ Customer-Intelligence-and-Revenue-Analytics/
 ├── insights_report.md
 │
 ├── data/
-│   ├── online_retail_II.csv               ← download from Kaggle (not in repo)
+│   ├── online_retail_II.csv               <- download from Kaggle (not in repo)
 │   ├── cleaned_transactions.csv
 │   ├── cancelled_transactions.csv
 │   ├── rfm_segments.csv
 │   └── cohort_retention_matrix.csv
 │
 ├── scripts/
-│   ├── 00_mysql_setup.sql                 ← create DB schema + indexes
+│   ├── 00_mysql_setup.sql                 <- create DB schema + indexes
 │   ├── 01_data_cleaning.py
 │   ├── 02_rfm_segmentation.py
 │   ├── 03_cohort_retention.py
-│   ├── 04_load_mysql.py                   ← batch load into MySQL
-│   ├── 05_mysql_analytics.sql             ← 7 MySQL business queries
+│   ├── 04_load_mysql.py                   <- batch load into MySQL
+│   ├── 05_mysql_analytics.sql             <- 7 MySQL business queries
 │   ├── 05_run_analytics.py
 │   └── 06_executive_dashboard.py
 │
