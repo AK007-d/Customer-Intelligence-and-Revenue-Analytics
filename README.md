@@ -96,18 +96,23 @@ Champions (1,297 customers) generated £11.9M. At Risk + About to Sleep segments
 Real business questions this analysis is designed to answer — with findings drawn directly from the data.
 
 **Q1. Which customer segment is most at risk of churning and what is the revenue impact?**
+
 At Risk customers (551 customers, avg 302 days inactive) represent £1.19M in historical revenue. About to Sleep (466 customers, avg 512 days inactive) adds a further £603K. Combined, £1.79M in revenue is at risk of permanent loss within the next 1–2 purchase cycles if no intervention is made.
 
 **Q2. Which international market should be prioritised for B2B sales investment?**
+
 Netherlands delivers £24,998 revenue per customer across just 22 accounts — the highest revenue-per-customer of any market outside EIRE. EIRE generates £120,412 per customer from only 5 accounts. Both profiles are consistent with wholesale buyers, making them the highest-priority targets for a structured B2B sales motion with volume pricing and annual contracts.
 
 **Q3. If only one win-back campaign could be run this month, which segment and what is the projected return?**
+
 At Risk segment. These 551 customers have purchased before (avg 5.3 orders each) and their inactivity is recent enough to be recoverable. At an average spend of £2,165 per customer, a 15% reactivation rate returns approximately £179K in revenue from a single campaign.
 
 **Q4. Which products are driving repeat purchases versus one-time buys?**
+
 REGENCY CAKESTAND 3 TIER leads with 3,317 orders across 1,314 unique customers — a repeat purchase rate of 2.5 orders per customer. WHITE HANGING HEART T-LIGHT HOLDER shows 4,888 orders from 1,490 customers. Both are high-frequency, broad-reach SKUs that anchor the repeat purchase funnel and should be prioritised for inventory protection and bundle strategies.
 
 **Q5. What is the revenue impact of improving M+1 retention by 5 percentage points?**
+
 Current M+1 retention is 21%. A 5-point improvement to 26% retains approximately 23 additional customers per cohort. At an average new customer spend of £929, that is approximately £21K per cohort. Across 12 monthly cohorts, the annualised impact is approximately £252K in additional retained revenue — before any upsell or repeat purchase effect.
 
 ---
@@ -115,22 +120,22 @@ Current M+1 retention is 21%. A 5-point improvement to 26% retains approximately
 ## Recommendations
 
 **Rec 1 — Champions Retention Programme**
-1,297 Champions drive 68.4% of revenue. A 10% churn erases more revenue than recovering all Lost customers combined. Assign dedicated account management to top 100 by LTV; set automated frequency-drop alerts.
+Assign dedicated account management to top 100 customers by LTV and set automated frequency-drop alerts to protect the segment driving 68.4% of total revenue.
 
 **Rec 2 — M+1 Re-Engagement Sequence**
-79% of new customers never return. A 30-day post-purchase email sequence (day 7, 14, 28) with category-matched offers projected to recover ~290 additional retained customers per cohort from a 5-point retention improvement.
+Deploy a 30-day post-purchase email sequence (day 7, 14, 28) with category-matched offers to recover approximately 290 additional retained customers per cohort from a 5-point retention improvement.
 
 **Rec 3 — At Risk Win-Back Campaign**
-551 At Risk + 466 About to Sleep customers = £1.79M in recoverable revenue. A 15% reactivation rate returns ~£179K. Time-limited offer before customers cross into Lost.
+Run a time-limited win-back campaign for 551 At Risk and 466 About to Sleep customers before they cross into Lost, targeting a 15% reactivation rate to recover approximately £179K.
 
 **Rec 4 — International B2B Sales Motion**
-EIRE (£120K/customer) and Netherlands (£25K/customer) are wholesale accounts requiring structured B2B coverage — volume pricing, annual contracts, preferred SLAs.
+Assign structured B2B coverage to EIRE and Netherlands wholesale accounts with volume pricing, annual contracts, and preferred SLAs to accelerate international growth beyond 8.1% YoY.
 
 **Rec 5 — Campaign Scheduling to Peak Window**
-Wednesday 12:00 is the single highest-revenue hour (£545,977). All campaigns should land by 09:30 Tuesday or Wednesday. Weekend trading is negligible — consistent with B2B buyer base.
+Schedule all campaigns to land by 09:30 Tuesday or Wednesday, aligning to Wednesday 12:00 — the single highest-revenue hour at £545,977.
 
 **Rec 6 — Tier 1 SKU Inventory Protection**
-Top 20 SKUs drive ~28% of revenue. Classify as Tier 1 with dedicated inventory buffers and automated reorder triggers at 30% stock remaining.
+Classify top 20 SKUs as Tier 1 with dedicated inventory buffers and automated reorder triggers at 30% stock remaining to prevent stockout-driven revenue loss.
 
 | Recommendation | Revenue at Stake | Expected Outcome |
 |---------------|-----------------|-----------------|
@@ -140,6 +145,8 @@ Top 20 SKUs drive ~28% of revenue. Classify as Tier 1 with dedicated inventory b
 | International B2B | £1,320,495 intl base | +12-15% YoY growth |
 | Campaign Scheduling | All segments | Engagement uplift |
 | Tier 1 SKU Protection | 28% of £17.5M | Stockout prevention |
+
+> For detailed findings behind each recommendation: [insights_report.md](insights_report.md)
 
 ---
 
